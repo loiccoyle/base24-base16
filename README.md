@@ -1,6 +1,6 @@
 # base24-base16
 
-Convert base16 color schemes to base24
+Convert base16 color schemes to base24.
 
 ## Base24 spec
 
@@ -34,12 +34,12 @@ Convert base16 color schemes to base24
 ## Method
 
 ```
-base10 = darken(base00, 10%)
-base10 = darken(base10, 10%)
-base12 = lighten(base08, 10%)
-base13 = lighten(base0A, 10%)
-base14 = lighten(base0B, 10%)
-base15 = lighten(base0C, 10%)
-base16 = lighten(base0D, 10%)
-base17 = lighten(base0E, 10%)
+base10 = darken(base00, factor)
+base11 = darken(base10, factor)
+base12 = brighten(base08, factor)
+base13 = brighten(base0A, factor)
+base14 = brighten(base0B, factor)
+base15 = brighten(base0C, factor)
+base16 = brighten(base0D, factor)
+base17 = brighten(base0E, factor)
 ```
