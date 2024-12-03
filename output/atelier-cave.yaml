@@ -1,0 +1,29 @@
+system: base24
+name: Atelier Cave
+author: Bram de Haan (http://atelierbramdehaan.nl)
+variant: dark
+palette:
+  base00: '#19171c'
+  base01: '#26232a'
+  base02: '#585260'
+  base03: '#655f6d'
+  base04: '#7e7887'
+  base05: '#8b8792'
+  base06: '#e2dfe7'
+  base07: '#efecf4'
+  base08: '#be4678'
+  base09: '#aa573c'
+  base0A: '#a06e3b'
+  base0B: '#2a9292'
+  base0C: '#398bc6'
+  base0D: '#576ddb'
+  base0E: '#955ae7'
+  base0F: '#bf40bf'
+  base10: '#161519'
+  base11: '#141317'
+  base12: '#C55986'
+  base13: '#B07941'
+  base14: '#2EA1A1'
+  base15: '#4D97CC'
+  base16: '#7083E0'
+  base17: '#A776EB'

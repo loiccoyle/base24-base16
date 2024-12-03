@@ -1,0 +1,29 @@
+system: base24
+name: Hardcore
+author: Chris Caller
+variant: dark
+palette:
+  base00: '#212121'
+  base01: '#303030'
+  base02: '#353535'
+  base03: '#4A4A4A'
+  base04: '#707070'
+  base05: '#cdcdcd'
+  base06: '#e5e5e5'
+  base07: '#ffffff'
+  base08: '#f92672'
+  base09: '#fd971f'
+  base0A: '#e6db74'
+  base0B: '#a6e22e'
+  base0C: '#708387'
+  base0D: '#66d9ef'
+  base0E: '#9e6ffe'
+  base0F: '#e8b882'
+  base10: '#1E1E1E'
+  base11: '#1B1B1B'
+  base12: '#FA4284'
+  base13: '#EBE391'
+  base14: '#B0E546'
+  base15: '#7D8F93'
+  base16: '#85E1F2'
+  base17: '#B693FE'

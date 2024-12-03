@@ -1,0 +1,29 @@
+system: base24
+name: OneDark Dark
+author: olimorris (https://github.com/olimorris)
+variant: dark
+palette:
+  base00: '#000000'
+  base01: '#1c1f24'
+  base02: '#2c313a'
+  base03: '#434852'
+  base04: '#565c64'
+  base05: '#abb2bf'
+  base06: '#b6bdca'
+  base07: '#c8ccd4'
+  base08: '#ef596f'
+  base09: '#d19a66'
+  base0A: '#e5c07b'
+  base0B: '#89ca78'
+  base0C: '#2bbac5'
+  base0D: '#61afef'
+  base0E: '#d55fde'
+  base0F: '#be5046'
+  base10: '#000000'
+  base11: '#000000'
+  base12: '#F27789'
+  base13: '#EBCE98'
+  base14: '#9DD38F'
+  base15: '#35C8D3'
+  base16: '#80BEF2'
+  base17: '#DC79E3'

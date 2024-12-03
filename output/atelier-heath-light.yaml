@@ -1,0 +1,29 @@
+system: base24
+name: Atelier Heath Light
+author: Bram de Haan (http://atelierbramdehaan.nl)
+variant: light
+palette:
+  base00: '#f7f3f7'
+  base01: '#d8cad8'
+  base02: '#ab9bab'
+  base03: '#9e8f9e'
+  base04: '#776977'
+  base05: '#695d69'
+  base06: '#292329'
+  base07: '#1b181b'
+  base08: '#ca402b'
+  base09: '#a65926'
+  base0A: '#bb8a35'
+  base0B: '#918b3b'
+  base0C: '#159393'
+  base0D: '#516aec'
+  base0E: '#7b59c0'
+  base0F: '#cc33cc'
+  base10: '#E3D6E3'
+  base11: '#D2BBD2'
+  base12: '#D54D39'
+  base13: '#C9963F'
+  base14: '#A09941'
+  base15: '#17A2A2'
+  base16: '#6E82EF'
+  base17: '#8B6DC8'

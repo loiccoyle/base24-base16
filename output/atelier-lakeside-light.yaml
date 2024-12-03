@@ -1,0 +1,29 @@
+system: base24
+name: Atelier Lakeside Light
+author: Bram de Haan (http://atelierbramdehaan.nl)
+variant: light
+palette:
+  base00: '#ebf8ff'
+  base01: '#c1e4f6'
+  base02: '#7ea2b4'
+  base03: '#7195a8'
+  base04: '#5a7b8c'
+  base05: '#516d7b'
+  base06: '#1f292e'
+  base07: '#161b1d'
+  base08: '#d22d72'
+  base09: '#935c25'
+  base0A: '#8a8a0f'
+  base0B: '#568c3b'
+  base0C: '#2d8f6f'
+  base0D: '#257fad'
+  base0E: '#6b6bb8'
+  base0F: '#b72dd2'
+  base10: '#BAE7FF'
+  base11: '#8ED7FF'
+  base12: '#D64280'
+  base13: '#989811'
+  base14: '#5F9A41'
+  base15: '#329D7A'
+  base16: '#298CBE'
+  base17: '#7F7FC1'

@@ -1,0 +1,29 @@
+system: base24
+name: Atelier Savanna Light
+author: Bram de Haan (http://atelierbramdehaan.nl)
+variant: light
+palette:
+  base00: '#ecf4ee'
+  base01: '#dfe7e2'
+  base02: '#87928a'
+  base03: '#78877d'
+  base04: '#5f6d64'
+  base05: '#526057'
+  base06: '#232a25'
+  base07: '#171c19'
+  base08: '#b16139'
+  base09: '#9f713c'
+  base0A: '#a07e3b'
+  base0B: '#489963'
+  base0C: '#1c9aa0'
+  base0D: '#478c90'
+  base0E: '#55859b'
+  base0F: '#867469'
+  base10: '#CEE2D3'
+  base11: '#B2D3BA'
+  base12: '#C16B40'
+  base13: '#B08B41'
+  base14: '#4FA86D'
+  base15: '#1FA9B0'
+  base16: '#4E9A9E'
+  base17: '#6091A8'

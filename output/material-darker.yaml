@@ -1,0 +1,29 @@
+system: base24
+name: Material Darker
+author: Nate Peterson
+variant: dark
+palette:
+  base00: '#212121'
+  base01: '#303030'
+  base02: '#353535'
+  base03: '#4A4A4A'
+  base04: '#B2CCD6'
+  base05: '#EEFFFF'
+  base06: '#EEFFFF'
+  base07: '#FFFFFF'
+  base08: '#F07178'
+  base09: '#F78C6C'
+  base0A: '#FFCB6B'
+  base0B: '#C3E88D'
+  base0C: '#89DDFF'
+  base0D: '#82AAFF'
+  base0E: '#C792EA'
+  base0F: '#FF5370'
+  base10: '#1E1E1E'
+  base11: '#1B1B1B'
+  base12: '#F39196'
+  base13: '#FFD88F'
+  base14: '#D3EEAC'
+  base15: '#B0E8FF'
+  base16: '#A9C4FF'
+  base17: '#D7B2F0'

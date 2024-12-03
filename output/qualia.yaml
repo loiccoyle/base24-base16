@@ -1,0 +1,29 @@
+system: base24
+name: Qualia
+author: isaacwhanson
+variant: dark
+palette:
+  base00: '#101010'
+  base01: '#454545'
+  base02: '#454545'
+  base03: '#454545'
+  base04: '#808080'
+  base05: '#C0C0C0'
+  base06: '#C0C0C0'
+  base07: '#454545'
+  base08: '#EFA6A2'
+  base09: '#A3B8EF'
+  base0A: '#E6A3DC'
+  base0B: '#80C990'
+  base0C: '#C8C874'
+  base0D: '#50CACD'
+  base0E: '#E0AF85'
+  base0F: '#808080'
+  base10: '#0E0E0E'
+  base11: '#0D0D0D'
+  base12: '#F5C7C4'
+  base13: '#EEC2E8'
+  base14: '#97D3A4'
+  base15: '#D1D18B'
+  base16: '#66D1D3'
+  base17: '#E7C2A1'

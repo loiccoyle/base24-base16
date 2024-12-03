@@ -1,0 +1,29 @@
+system: base24
+name: Equilibrium Dark
+author: Carlo Abelli
+variant: dark
+palette:
+  base00: '#0c1118'
+  base01: '#181c22'
+  base02: '#22262d'
+  base03: '#7b776e'
+  base04: '#949088'
+  base05: '#afaba2'
+  base06: '#cac6bd'
+  base07: '#e7e2d9'
+  base08: '#f04339'
+  base09: '#df5923'
+  base0A: '#bb8801'
+  base0B: '#7f8b00'
+  base0C: '#00948b'
+  base0D: '#008dd1'
+  base0E: '#6a7fd2'
+  base0F: '#e3488e'
+  base10: '#0B0F16'
+  base11: '#0A0E13'
+  base12: '#F25D55'
+  base13: '#CE9601'
+  base14: '#8C9900'
+  base15: '#00A399'
+  base16: '#009BE6'
+  base17: '#8294D9'

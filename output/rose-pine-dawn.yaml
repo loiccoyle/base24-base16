@@ -1,0 +1,29 @@
+system: base24
+name: "Ros\xE9 Pine Dawn"
+author: Emilia Dunfelt <edun@dunfelt.se>
+variant: light
+palette:
+  base00: '#faf4ed'
+  base01: '#fffaf3'
+  base02: '#f2e9de'
+  base03: '#9893a5'
+  base04: '#797593'
+  base05: '#575279'
+  base06: '#575279'
+  base07: '#cecacd'
+  base08: '#b4637a'
+  base09: '#ea9d34'
+  base0A: '#d7827e'
+  base0B: '#286983'
+  base0C: '#56949f'
+  base0D: '#907aa9'
+  base0E: '#ea9d34'
+  base0F: '#cecacd'
+  base10: '#EFDDC7'
+  base11: '#E6C8A5'
+  base12: '#BD768A'
+  base13: '#DF9B98'
+  base14: '#2C7490'
+  base15: '#63A0AB'
+  base16: '#9F8CB4'
+  base17: '#EDAA4E'

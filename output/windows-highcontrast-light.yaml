@@ -1,0 +1,30 @@
+system: base24
+name: Windows High Contrast Light
+slug: windows-highcontrast-light
+author: Fergus Collins (https://github.com/C-Fergus)
+variant: light
+palette:
+  base00: '#fcfcfc'
+  base01: '#e8e8e8'
+  base02: '#d4d4d4'
+  base03: '#c0c0c0'
+  base04: '#7e7e7e'
+  base05: '#545454'
+  base06: '#2a2a2a'
+  base07: '#000000'
+  base08: '#800000'
+  base09: '#fcfc54'
+  base0A: '#808000'
+  base0B: '#008000'
+  base0C: '#008080'
+  base0D: '#000080'
+  base0E: '#800080'
+  base0F: '#54fc54'
+  base10: '#E3E3E3'
+  base11: '#CCCCCC'
+  base12: '#8D0000'
+  base13: '#8D8D00'
+  base14: '#008D00'
+  base15: '#008D8D'
+  base16: '#00008D'
+  base17: '#8D008D'

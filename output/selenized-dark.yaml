@@ -1,0 +1,30 @@
+system: base24
+name: selenized-dark
+author: Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16
+  by ali
+variant: dark
+palette:
+  base00: '#103c48'
+  base01: '#184956'
+  base02: '#2d5b69'
+  base03: '#72898f'
+  base04: '#72898f'
+  base05: '#adbcbc'
+  base06: '#cad8d9'
+  base07: '#cad8d9'
+  base08: '#fa5750'
+  base09: '#ed8649'
+  base0A: '#dbb32d'
+  base0B: '#75b938'
+  base0C: '#41c7b9'
+  base0D: '#4695f7'
+  base0E: '#af88eb'
+  base0F: '#f275be'
+  base10: '#0E3641'
+  base11: '#0D313A'
+  base12: '#FB7670'
+  base13: '#DFBB44'
+  base14: '#81C643'
+  base15: '#55CDC1'
+  base16: '#64A6F8'
+  base17: '#C4A8F0'

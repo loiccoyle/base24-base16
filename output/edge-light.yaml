@@ -1,0 +1,29 @@
+system: base24
+name: Edge Light
+author: cjayross (https://github.com/cjayross)
+variant: light
+palette:
+  base00: '#fafafa'
+  base01: '#7c9f4b'
+  base02: '#d69822'
+  base03: '#5e646f'
+  base04: '#6587bf'
+  base05: '#5e646f'
+  base06: '#b870ce'
+  base07: '#5e646f'
+  base08: '#db7070'
+  base09: '#db7070'
+  base0A: '#d69822'
+  base0B: '#7c9f4b'
+  base0C: '#509c93'
+  base0D: '#6587bf'
+  base0E: '#b870ce'
+  base0F: '#509c93'
+  base10: '#E1E1E1'
+  base11: '#CBCBCB'
+  base12: '#E28A8A'
+  base13: '#DEA332'
+  base14: '#88AE53'
+  base15: '#59AAA1'
+  base16: '#7A97C8'
+  base17: '#C488D6'

@@ -1,0 +1,29 @@
+system: base24
+name: Equilibrium Gray Light
+author: Carlo Abelli
+variant: light
+palette:
+  base00: '#f1f1f1'
+  base01: '#e2e2e2'
+  base02: '#d4d4d4'
+  base03: '#777777'
+  base04: '#5e5e5e'
+  base05: '#474747'
+  base06: '#303030'
+  base07: '#1b1b1b'
+  base08: '#d02023'
+  base09: '#bf3e05'
+  base0A: '#9d6f00'
+  base0B: '#637200'
+  base0C: '#007a72'
+  base0D: '#0073b5'
+  base0E: '#4e66b6'
+  base0F: '#c42775'
+  base10: '#D9D9D9'
+  base11: '#C3C3C3'
+  base12: '#DE2A2D'
+  base13: '#AD7A00'
+  base14: '#6D7D00'
+  base15: '#00867D'
+  base16: '#007FC7'
+  base17: '#6076BE'

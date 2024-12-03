@@ -1,0 +1,29 @@
+system: base24
+name: Gruvbox Material Dark, Hard
+author: Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
+variant: dark
+palette:
+  base00: '#202020'
+  base01: '#2a2827'
+  base02: '#504945'
+  base03: '#5a524c'
+  base04: '#bdae93'
+  base05: '#ddc7a1'
+  base06: '#ebdbb2'
+  base07: '#fbf1c7'
+  base08: '#ea6962'
+  base09: '#e78a4e'
+  base0A: '#d8a657'
+  base0B: '#a9b665'
+  base0C: '#89b482'
+  base0D: '#7daea3'
+  base0E: '#d3869b'
+  base0F: '#bd6f3e'
+  base10: '#1D1D1D'
+  base11: '#1A1A1A'
+  base12: '#EE857F'
+  base13: '#DEB370'
+  base14: '#B4BF78'
+  base15: '#9BC095'
+  base16: '#8FB9B0'
+  base17: '#DC9FB0'
