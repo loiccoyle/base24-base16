@@ -19,10 +19,10 @@
 <rect x="450" y="90" width="45" height="45" style="fill:#00a800" />
 <rect x="30" y="150" width="45" height="45" style="fill:#000000" />
 <rect x="90" y="150" width="45" height="45" style="fill:#000000" />
-<rect x="150" y="150" width="45" height="45" style="fill:#ff827d" />
+<rect x="150" y="150" width="45" height="45" style="fill:#ff8d87" />
 <rect x="210" y="150" width="45" height="45" style="fill:#ffff5d" />
 <rect x="270" y="150" width="45" height="45" style="fill:#80ff78" />
 <rect x="330" y="150" width="45" height="45" style="fill:#7cffff" />
-<rect x="390" y="150" width="45" height="45" style="fill:#727cff" />
-<rect x="450" y="150" width="45" height="45" style="fill:#ff8cff" />
+<rect x="390" y="150" width="45" height="45" style="fill:#7985ff" />
+<rect x="450" y="150" width="45" height="45" style="fill:#ff99ff" />
 </svg>
