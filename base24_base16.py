@@ -1,26 +1,52 @@
 import argparse
 from pathlib import Path
+from typing import Iterable, OrderedDict
 
+import colorspacious as cs
 import yaml
 from tqdm import tqdm
-from colorzero import Color, Lightness
 
+CONTRAST = 0.2
 BASE16_SCHEME_DIR = Path("schemes") / "base16"
 BASE24_BASE16_SCHEME_DIR = Path("output")
 
 
-def lighten(color: str, perc: float) -> str:
+def hex_to_rgb(hex_color: str) -> tuple[float, ...]:
+    """Convert a hex color string to an RGB tuple normalized to [0, 1]."""
+    hex_color = hex_color.lstrip("#")
+    return tuple(int(hex_color[i : i + 2], 16) / 255 for i in (0, 2, 4))
+
+
+def rgb_to_hex(rgb: Iterable[float]) -> str:
+    """Convert an RGB tuple normalized to [0, 1] to a hex color string."""
+    return "#{:02x}{:02x}{:02x}".format(
+        *(max(0, min(255, int(channel * 255))) for channel in rgb)
+    )
+
+
+def brighten(hex_color: str, brighten_factor: float) -> str:
     """
-    Adjusts the lightness of a given color.
+    Brightens or darkens a hex color in a perceptually uniform color space by a multiplier.
 
     Args:
-        color: The base color in a string format (e.g., "#RRGGBB").
-        perc: The percentage to adjust the lightness by. Values >1 lighten, <1 darken.
+        hex_color: The input color in hex format (e.g., "#RRGGBB").
+        brighten_factor: Multiplier for brightness, values>1 brighten, <1 darken
 
     Returns:
-        The adjusted color as a hexadecimal string.
+        The adjusted color in hex format.
     """
-    return str(Color(color) * Lightness(perc)).upper()
+    rgb = hex_to_rgb(hex_color)
+
+    jch = cs.cspace_convert(rgb, "sRGB1", "JCh")
+
+    jch[0] *= brighten_factor
+    # Clamp J to valid range [0, 100]
+    jch[0] = max(0, min(100, jch[0]))
+
+    adjusted_rgb = cs.cspace_convert(jch, "JCh", "sRGB1")
+    adjusted_rgb_clamped = [max(0, min(1, channel)) for channel in adjusted_rgb]
+
+    return rgb_to_hex(adjusted_rgb_clamped)
 
 
 def base16_scheme_files(scheme_dir: Path):
@@ -33,7 +59,7 @@ def base16_scheme_files(scheme_dir: Path):
     yield from scheme_dir.glob("*.yaml")
 
 
-def convert(scheme: dict, contrast: float = 0.1) -> None:
+def convert(scheme: dict, contrast: float = CONTRAST) -> None:
     """
     Converts a Base16 color scheme to a Base24 color scheme by adding new colors
     to the palette based on lightness adjustments.
@@ -47,20 +73,20 @@ def convert(scheme: dict, contrast: float = 0.1) -> None:
         and the "system" key set to "base24".
     """
     darken_amount = 1 - contrast
-    lighten_amount = 1 + contrast
+    brighten_amount = 1 + contrast
 
-    base24_colors = {
-        "base10": lambda palette: lighten(palette["base00"], darken_amount),
-        "base11": lambda palette: lighten(
-            palette["base00"], darken_amount * darken_amount
-        ),
-        "base12": lambda palette: lighten(palette["base08"], lighten_amount),
-        "base13": lambda palette: lighten(palette["base0A"], lighten_amount),
-        "base14": lambda palette: lighten(palette["base0B"], lighten_amount),
-        "base15": lambda palette: lighten(palette["base0C"], lighten_amount),
-        "base16": lambda palette: lighten(palette["base0D"], lighten_amount),
-        "base17": lambda palette: lighten(palette["base0E"], lighten_amount),
-    }
+    base24_colors = OrderedDict(
+        {
+            "base10": lambda palette: brighten(palette["base00"], darken_amount),
+            "base11": lambda palette: brighten(palette["base10"], darken_amount),
+            "base12": lambda palette: brighten(palette["base08"], brighten_amount),
+            "base13": lambda palette: brighten(palette["base0A"], brighten_amount),
+            "base14": lambda palette: brighten(palette["base0B"], brighten_amount),
+            "base15": lambda palette: brighten(palette["base0C"], brighten_amount),
+            "base16": lambda palette: brighten(palette["base0D"], brighten_amount),
+            "base17": lambda palette: brighten(palette["base0E"], brighten_amount),
+        }
+    )
     for color, func in base24_colors.items():
         scheme["palette"][color] = func(scheme["palette"])
     scheme["system"] = "base24"
@@ -77,10 +103,10 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="""Convert base16 color schemes to base24.
 
-Fills in missing colors with lightened/darkened colors from the base16 scheme:
+Fills in missing colors with brightened/darkened colors from the base16 scheme:
 
 base10 = darken(base00, 1 - contrast)
-base10 = darken(base00, (1 - contrast)**2)
+base11 = darken(base00, (1 - contrast)**2)
 base12 = lighten(base08, 1 + contrast)
 base13 = lighten(base0A, 1 + contrast)
 base14 = lighten(base0B, 1 + contrast)
@@ -94,9 +120,9 @@ base17 = lighten(base0E, 1 + contrast)
         "-c",
         "--contrast",
         type=float,
-        help="How much to lighten/darken the base16 colors.\ndefault: [0.1]",
-        const=0.1,
-        default=0.1,
+        help=f"How much to brighten/darken the base16 colors.\ndefault: [{CONTRAST}]",
+        const=CONTRAST,
+        default=CONTRAST,
         nargs="?",
     )
     parser.add_argument(
