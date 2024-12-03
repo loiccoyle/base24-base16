@@ -103,16 +103,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="""Convert base16 color schemes to base24.
 
-Fills in missing colors with brightened/darkened colors from the base16 scheme:
-
-base10 = darken(base00, 1 - contrast)
-base11 = darken(base00, (1 - contrast)**2)
-base12 = lighten(base08, 1 + contrast)
-base13 = lighten(base0A, 1 + contrast)
-base14 = lighten(base0B, 1 + contrast)
-base15 = lighten(base0C, 1 + contrast)
-base16 = lighten(base0D, 1 + contrast)
-base17 = lighten(base0E, 1 + contrast)
+Fills in missing colors with brightened/darkened colors from the base16 scheme.
 """,
         formatter_class=argparse.RawTextHelpFormatter,
     )
