@@ -6,7 +6,7 @@ import colorspacious as cs
 import yaml
 from tqdm import tqdm
 
-CONTRAST = 0.2
+CONTRAST = 0.25
 BASE16_SCHEME_DIR = Path("schemes") / "base16"
 BASE24_BASE16_SCHEME_DIR = Path("output")
 
