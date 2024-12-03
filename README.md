@@ -1,5 +1,7 @@
 # base24-base16
 
+> Still WIP, just playing around to see what stuff looks like.
+
 Convert base16 color schemes to base24.
 
 ## Base24 spec
@@ -30,16 +32,3 @@ Convert base16 color schemes to base24.
 | ![Colour](https://placehold.it/25/63d4e0/000000?text=+) | base15 | 14   | Bright Cyan         | NA                                                                                                          |
 | ![Colour](https://placehold.it/25/67cdff/000000?text=+) | base16 | 12   | Bright Blue         | NA                                                                                                          |
 | ![Colour](https://placehold.it/25/e48bff/000000?text=+) | base17 | 13   | Bright Purple       | NA                                                                                                          |
-
-## Method
-
-```
-base10 = darken(base00, factor)
-base11 = darken(base10, factor)
-base12 = brighten(base08, factor)
-base13 = brighten(base0A, factor)
-base14 = brighten(base0B, factor)
-base15 = brighten(base0C, factor)
-base16 = brighten(base0D, factor)
-base17 = brighten(base0E, factor)
-```
