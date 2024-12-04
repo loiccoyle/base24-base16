@@ -1,9 +1,4 @@
-#!/usr/bin/env -S uv run
-
-# /// script
-# dependencies = [  "ruamel-yaml>=0.18.6" ]
-# ///
-
+#!/usr/bin/env python3
 
 import argparse
 from typing import List, Tuple
