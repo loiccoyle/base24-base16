@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-import re
+import yaml
 import argparse
 from typing import List, Tuple
 
 
 def parse_arguments() -> argparse.Namespace:
-    """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
         description="Generate an SVG image from a YAML file."
     )
@@ -66,8 +65,8 @@ def parse_arguments() -> argparse.Namespace:
 
 def extract_colors(file_content: str) -> List[str]:
     """Extract color codes from the YAML file."""
-    pattern = r"(base[0-9a-fA-F]{2}):\s*'(#[0-9a-fA-F]{6})'"
-    return [match[1] for match in re.findall(pattern, file_content)]
+    scheme = yaml.safe_load(file_content)
+    return [color for color in scheme["palette"].values()]
 
 
 def calculate_svg_dimensions(
@@ -117,7 +116,6 @@ def generate_svg(
 
 
 def main() -> None:
-    """Main function."""
     args = parse_arguments()
 
     with args.inputfile as input_file:
