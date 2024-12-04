@@ -1,26 +1,26 @@
-system: base24
-name: Atelier Cave Light
-author: Bram de Haan (http://atelierbramdehaan.nl)
-variant: light
+system: "base24"
+name: "Atelier Cave Light"
+author: "Bram de Haan (http://atelierbramdehaan.nl)"
+variant: "light"
 palette:
-  base00: '#efecf4'
-  base01: '#e2dfe7'
-  base02: '#8b8792'
-  base03: '#7e7887'
-  base04: '#655f6d'
-  base05: '#585260'
-  base06: '#26232a'
-  base07: '#19171c'
-  base08: '#be4678'
-  base09: '#aa573c'
-  base0A: '#a06e3b'
-  base0B: '#2a9292'
-  base0C: '#398bc6'
-  base0D: '#576ddb'
-  base0E: '#955ae7'
-  base0F: '#bf40bf'
-  base10: '#87858d'
-  base11: '#4a4950'
+  base00: "#efecf4"
+  base01: "#e2dfe7"
+  base02: "#8b8792"
+  base03: "#7e7887"
+  base04: "#655f6d"
+  base05: "#585260"
+  base06: "#26232a"
+  base07: "#19171c"
+  base08: "#be4678"
+  base09: "#aa573c"
+  base0A: "#a06e3b"
+  base0B: "#2a9292"
+  base0C: "#398bc6"
+  base0D: "#576ddb"
+  base0E: "#955ae7"
+  base0F: "#bf40bf"
+  base10: '#fffdff'
+  base11: '#fffeff'
   base12: '#f874a7'
   base13: '#d69e66'
   base14: '#67c6c6'

@@ -1,27 +1,27 @@
-system: base24
-name: selenized-light
-author: Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16
-  by ali
-variant: light
+system: "base24"
+name: "selenized-light"
+author: "Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16
+  by ali"
+variant: "light"
 palette:
-  base00: '#fbf3db'
-  base01: '#ece3cc'
-  base02: '#d5cdb6'
-  base03: '#909995'
-  base04: '#909995'
-  base05: '#53676d'
-  base06: '#3a4d53'
-  base07: '#3a4d53'
-  base08: '#cc1729'
-  base09: '#bc5819'
-  base0A: '#a78300'
-  base0B: '#428b00'
-  base0C: '#00978a'
-  base0D: '#006dce'
-  base0E: '#825dc0'
-  base0F: '#c44392'
-  base10: '#8f8a75'
-  base11: '#504c3a'
+  base00: "#fbf3db"
+  base01: "#ece3cc"
+  base02: "#d5cdb6"
+  base03: "#909995"
+  base04: "#909995"
+  base05: "#53676d"
+  base06: "#3a4d53"
+  base07: "#3a4d53"
+  base08: "#cc1729"
+  base09: "#bc5819"
+  base0A: "#a78300"
+  base0B: "#428b00"
+  base0C: "#00978a"
+  base0D: "#006dce"
+  base0E: "#825dc0"
+  base0F: "#c44392"
+  base10: '#fffee6'
+  base11: '#ffffe8'
   base12: '#ff4b4e'
   base13: '#e1b93e'
   base14: '#6fbd38'

@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Iterable, OrderedDict
 
 import colorspacious as cs
-import yaml
+from ruamel.yaml import YAML
 from tqdm import tqdm
 
 CONTRAST = 0.5
@@ -65,20 +65,26 @@ def convert(scheme: dict, contrast: float = CONTRAST) -> None:
     to the palette based on lightness adjustments.
 
     Args:
-        scheme (dict): A dictionary representing the Base16 color scheme.
-                       It must include a "palette" key containing base colors.
+        scheme: A dictionary representing the Base16 color scheme.
+                It must include a "palette" key containing base colors.
+        contrast: Controls how much to brighten/darken the colors.
 
     Modifies:
         The `scheme` dictionary is updated in-place with the new Base24 colors
         and the "system" key set to "base24".
     """
+    is_light = scheme["variant"] == "light"
     darken_amount = 1 - contrast
     brighten_amount = 1 + contrast
 
     base24_colors = OrderedDict(
         {
-            "base10": lambda palette: brighten(palette["base00"], darken_amount),
-            "base11": lambda palette: brighten(palette["base10"], darken_amount),
+            "base10": lambda palette: brighten(
+                palette["base00"], brighten_amount if is_light else darken_amount
+            ),
+            "base11": lambda palette: brighten(
+                palette["base10"], brighten_amount if is_light else darken_amount
+            ),
             "base12": lambda palette: brighten(palette["base08"], brighten_amount),
             "base13": lambda palette: brighten(palette["base0A"], brighten_amount),
             "base14": lambda palette: brighten(palette["base0B"], brighten_amount),
@@ -147,13 +153,16 @@ def main() -> None:
     if not args.quiet:
         base16_schemes = tqdm(base16_schemes, desc="converting")
 
+    yaml = YAML()
+    yaml.preserve_quotes = True
+
     for scheme_file in base16_schemes:
         with scheme_file.open("r") as fp:
-            scheme = yaml.safe_load(fp)
+            scheme = yaml.load(fp)
         convert(scheme, args.contrast)
         out_file = args.output_dir / scheme_file.name
         with out_file.open("w") as fp:
-            yaml.safe_dump(scheme, fp, sort_keys=False)
+            yaml.dump(scheme, fp)
 
 
 if __name__ == "__main__":

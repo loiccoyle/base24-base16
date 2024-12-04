@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg width="525" height="225" xmlns="http://www.w3.org/2000/svg">
-<rect x="0" y="0" width="525" height="225" style="fill:#222222" />
-<rect x="30" y="30" width="45" height="45" style="fill:#222222" />
-<rect x="90" y="30" width="45" height="45" style="fill:#303030" />
-<rect x="150" y="30" width="45" height="45" style="fill:#555555" />
-<rect x="210" y="30" width="45" height="45" style="fill:#898989" />
-<rect x="270" y="30" width="45" height="45" style="fill:#898989" />
-<rect x="330" y="30" width="45" height="45" style="fill:#c0c0c0" />
-<rect x="390" y="30" width="45" height="45" style="fill:#e0e0e0" />
-<rect x="450" y="30" width="45" height="45" style="fill:#ffffff" />
-<rect x="30" y="90" width="45" height="45" style="fill:#e15d67" />
-<rect x="90" y="90" width="45" height="45" style="fill:#fc804e" />
-<rect x="150" y="90" width="45" height="45" style="fill:#e1b31a" />
-<rect x="210" y="90" width="45" height="45" style="fill:#5db129" />
-<rect x="270" y="90" width="45" height="45" style="fill:#21c992" />
-<rect x="330" y="90" width="45" height="45" style="fill:#00a3f2" />
-<rect x="390" y="90" width="45" height="45" style="fill:#b46ee0" />
-<rect x="450" y="90" width="45" height="45" style="fill:#b87d28" />
-<rect x="30" y="150" width="45" height="45" style="fill:#0e0e0e" />
-<rect x="90" y="150" width="45" height="45" style="fill:#040404" />
-<rect x="150" y="150" width="45" height="45" style="fill:#ff929b" />
-<rect x="210" y="150" width="45" height="45" style="fill:#fff75d" />
-<rect x="270" y="150" width="45" height="45" style="fill:#96f060" />
-<rect x="330" y="150" width="45" height="45" style="fill:#7cffd2" />
-<rect x="390" y="150" width="45" height="45" style="fill:#69dfff" />
-<rect x="450" y="150" width="45" height="45" style="fill:#efa6ff" />
+<svg width="165" height="225" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="165" height="225" style="fill:#0e0e0e" />
+<rect x="30" y="30" width="45" height="45" style="fill:#0e0e0e" />
+<rect x="90" y="30" width="45" height="45" style="fill:#040404" />
+<rect x="30" y="90" width="45" height="45" style="fill:#ff929b" />
+<rect x="90" y="90" width="45" height="45" style="fill:#fff75d" />
+<rect x="30" y="150" width="45" height="45" style="fill:#96f060" />
+<rect x="90" y="150" width="45" height="45" style="fill:#7cffd2" />
+<rect x="30" y="210" width="45" height="45" style="fill:#69dfff" />
+<rect x="90" y="210" width="45" height="45" style="fill:#efa6ff" />
 </svg>

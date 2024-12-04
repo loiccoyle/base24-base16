@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "Convert base16 color schemes to base24"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["colorspacious>=1.1.2", "pyyaml>=6.0.2", "tqdm>=4.67.1"]
+dependencies = [
+    "colorspacious>=1.1.2",
+    "pyyaml>=6.0.2",
+    "ruamel-yaml>=0.18.6",
+    "tqdm>=4.67.1",
+]
