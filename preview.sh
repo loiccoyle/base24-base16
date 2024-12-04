@@ -7,10 +7,11 @@ true >${README_FILE}
 
 for file in output/*.yaml; do
   style="$(basename "${file%.yaml}")"
-  output="${PREVIEW_DIR}/svgs/${style}.svg"
-  python preview.py "$file" -o "$output"
+  src="svgs/${style}.svg"
+  svg_file="${PREVIEW_DIR}/svgs/${style}.svg"
+  python preview.py "$file" -o "$svg_file"
   echo "<h3 align='center'>
   <p>${style}</p>
-  <img src='./${output}' />
+  <img src='./${src}' />
 </h3>" >>"${README_FILE}"
 done
