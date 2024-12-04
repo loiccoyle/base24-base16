@@ -1,8 +1,16 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run
 
-import yaml
+# /// script
+# dependencies = [  "ruamel-yaml>=0.18.6" ]
+# ///
+
+
 import argparse
 from typing import List, Tuple
+
+from ruamel.yaml import YAML
+
+yaml = YAML()
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -65,7 +73,7 @@ def parse_arguments() -> argparse.Namespace:
 
 def extract_colors(file_content: str) -> List[str]:
     """Extract color codes from the YAML file."""
-    scheme = yaml.safe_load(file_content)
+    scheme = yaml.load(file_content)
     return [color for color in scheme["palette"].values()]
 
 
