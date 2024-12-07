@@ -11,8 +11,8 @@ See the [preview](./preview/README.md).
 Use `uv` to setup the `venv` and activate it.
 
 ```sh
-uv venv
-source venv/bin/activate
+uv sync
+source .venv/bin/activate
 ```
 
 > A `requirements.txt` file is included in the repo if you don't want to use `uv`.
